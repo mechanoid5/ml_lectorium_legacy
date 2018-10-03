@@ -1,0 +1,35 @@
+качаем питон (для x64 cpu, win) 
+   https://www.python.org/ftp/python/3.7.0/python-3.7.0-amd64.exe
+
+качаем кастомную сборку numpy + mkl (для intel x64 cpu, win) 
+   https://download.lfd.uci.edu/pythonlibs/o4uhg4xd/numpy-1.15.1+mkl-cp37-cp37m-win_amd64.whl
+
+
+ставим питон 
+  жмем: добавить в path,  для всех, 
+  путь с:\python37
+
+
+обновляем pip
+  python -m pip install --upgrade pip
+
+ставим numpy  
+  pip install "numpy-1.15.1+mkl-cp37-cp37m-win_amd64.whl"
+
+ставим всё остальное   
+  pip install sklearn matplotlib pandas scipy sympy
+
+ставим жупитер
+  pip install jupyter jupyter_nbextensions_configurator jupyter_contrib_nbextensions
+
+включаем nbextension и оглавление
+   jupyter contrib nbextension install --user
+   jupyter nbextensions_configurator enable --user
+   jupyter nbextension enable toc2/main
+
+доступ к БД и хранилищам azure (опционально)  
+  pip install sqlalchemy pyodbc azure
+
+
+cd projects/
+jupyter notebook
