@@ -1,3 +1,16 @@
+#!python
+# -*- coding: utf-8 -*-
+
+# - - - - - - - - - - - - - - - -
+#       OS : GNU/Linux 4.18.12-1-ARCH 
+# COMPILER : Python 3.7.0
+#
+#   AUTHOR : Evgeny S. Borisov
+# 
+#    http://www.mechanoid.kiev.ua
+#  e-mail : borisov.e@solarl.ru
+# - - - - - - - - - - - - - - - -
+
 class Node:
     def __init__(self,feature,bound,parent,left=None,right=None):
         self._feature = feature
@@ -44,4 +57,4 @@ class Leaf:
     @parent.setter
     def parent(self,value): self._parent = value
     
-    def __repr__(self): return '%i:%f'%(self.mark)
+    def __repr__(self): return '%i'%(self.mark)
