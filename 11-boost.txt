@@ -1,5 +1,0 @@
-Композиции алгоритмов
-
-adaboost
-
-random forest
