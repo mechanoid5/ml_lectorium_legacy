@@ -36,6 +36,7 @@
 опционально:
 
 
+
 качаем кастомную сборку numpy+mkl для intel x64 cpu, win64 
    https://download.lfd.uci.edu/pythonlibs/o4uhg4xd/numpy-1.15.1+mkl-cp37-cp37m-win_amd64.whl
 
