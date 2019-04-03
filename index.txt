@@ -26,39 +26,6 @@
 16. учебный датасет выбор признаков и отсев выбросов 
 17. практикум по пройденным моделям в sklearn
 
-   pandas 
-
-   sklearn.datasets
-
-   sklearn.preprocessing.MinMaxScaler
-   sklearn.preprocessing.StandardScaler
-
-   sklearn.metrics.pairwise.pairwise_distances
-   sklearn.neighbors.KNeighborsClassifier
-   sklearn.neighbors.KNeighborsRegressor
-   sklearn.cluster.KMeans
-   sklearn.cluster.DBSCAN
-
-   sklearn.tree.DecisionTreeClassifier (feature_importances)
-
-   sklearn.linear_model.SGDClassifier
-   sklearn.svm
-   sklearn.linear_model.LinearRegression
-   sklearn.preprocessing.PolynomialFeatures
-
-   sklearn.linear_model.LogisticRegression
-
-   from sklearn.naive_bayes import GaussianNB
-   sklearn.mixture.GaussianMixture
- 
-   sklearn.ensemble.AdaBoostClassifier
-   sklearn.ensemble.RandomForestClassifier
-
-   sklearn.neural_network.MLPClassifier
-   sklearn.neural_network.MLPRegressor
-
-
-
 15. тексты TF-IDF и приложения,определение темы LDA 
 
 18. релаксационные сети Хопфилд, Хеминг, машина Больцмана, ассоциативная память, RBM, DBM, DBN 
@@ -69,6 +36,7 @@
 20. рекурентные сети Элман, LSTM 
 
 22. тексты чатбот 
+
 23. свёрточные сети 
 
 
