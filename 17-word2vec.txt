@@ -1,0 +1,6 @@
+О методе кодирования слов word2vec.
+
+
+Skip-Gram
+
+CBOW
