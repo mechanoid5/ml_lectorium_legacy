@@ -15,7 +15,6 @@ def part_pi( r,p,n=int(5e8) ):
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 def main():
-
     comm = MPI.COMM_WORLD
     p = comm.Get_size() # количество процессов
     r = comm.Get_rank() # номер процесса
@@ -25,16 +24,19 @@ def main():
 
     res=np.zeros(1,dtype=np.float)
 
-    comm.Allreduce( 
-            np.array( part_pi(r,p), dtype=np.float ), 
-            res, 
-            op=MPI.SUM 
-            )
+#     comm.Allreduce( 
+#             np.array( part_pi(r,p), dtype=np.float ), 
+#             res, 
+#             op=MPI.SUM 
+#            )
 
+    comm.Reduce(  np.array( part_pi(r,p), dtype=np.float ),
+                  res, 
+                  op=MPI.SUM, 
+                  root=0 )
+    
     if(r==0): print('\n pi',res)
         
-
-
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 if __name__=="__main__":
     sys.exit(main())
