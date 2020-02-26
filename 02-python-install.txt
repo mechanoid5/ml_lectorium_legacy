@@ -3,7 +3,10 @@
 
 ставим питон 
    жмем: "добавить в path",  "для всех", 
-   путь с:\python3
+   путь для файлов с:\python3
+
+открываем консоль 
+   cmd.exe
 
 обновляем pip
    python -m pip install --upgrade pip
