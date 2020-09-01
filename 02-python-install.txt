@@ -1,0 +1,37 @@
+качаем питон (для x64 cpu, win) 
+   https://www.python.org
+
+ставим питон 
+   жмем: "добавить в path",  "для всех", 
+   путь для файлов с:\python3
+
+открываем консоль 
+   cmd.exe
+
+обновляем pip
+   python -m pip install --upgrade pip
+
+ставим библиотеки питона   
+   pip install sklearn matplotlib pandas scipy numpy
+
+ставим жупитер
+   pip install jupyter jupyter_nbextensions_configurator jupyter_contrib_nbextensions
+
+включаем nbextension и оглавление
+   jupyter contrib nbextension install --user
+   jupyter nbextensions_configurator enable --user
+   jupyter nbextension enable toc2/main
+
+создаём папку для проектов
+
+   mkdir  projects/
+
+запускаем сервер жупитер
+
+   cd projects/
+   jupyter notebook
+
+
+если браузер автоматически не открылся
+то копируем url и помещаем его в строку адреса браузера
+
