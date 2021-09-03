@@ -8,30 +8,53 @@
 открываем консоль 
    cmd.exe
 
+
 обновляем pip
    python -m pip install --upgrade pip
 
-ставим библиотеки питона   
-   pip install sklearn matplotlib pandas scipy numpy
 
-ставим жупитер
-   pip install jupyter jupyter_nbextensions_configurator jupyter_contrib_nbextensions
+инсталируем менеджер виртуальных сред для python
+   pip install virtualenv
 
-включаем nbextension и оглавление
+создаём виртуальную среду python
+   mkdir c:\python_env\python3
+   virtualenv -p python3 python3
+
+
+активируем среду    
+   source c:\python_env\python3\bin\activate
+
+
+   
+инсталируем нужные нам python-пакеты
+   pip install numpy tqdm pandas  tabulate matplotlib idx2numpy pydot graphviz pydot
+   pip install scikit-learn scipy
+   pip install jupyter jupyter_contrib_nbextensions  jupyter_nbextensions_configurator
+
+
+инициализируем расширения для jupyter   
    jupyter contrib nbextension install --user
    jupyter nbextensions_configurator enable --user
    jupyter nbextension enable toc2/main
 
-создаём папку для проектов
 
+создаём папку для проектов
    mkdir  projects/
 
-запускаем сервер жупитер
 
+запускаем сервер жупитер
    cd projects/
    jupyter notebook
 
-
 если браузер автоматически не открылся
 то копируем url и помещаем его в строку адреса браузера
+
+
+
+завершение работы среды 
+    сохраняем/закрываем jupyter проекты
+    гасим сервер jupyter
+    c:\python_env\python3\bin\deactivate
+
+
 
