@@ -10,20 +10,18 @@
 
 
 обновляем pip
-   python -m pip install --upgrade pip
+   с:\python3\python -m pip install --upgrade pip
 
 
-инсталируем менеджер виртуальных сред для python
-   pip install virtualenv
+создаём виртуальную среду python  ( https://docs.python.org/3/library/venv.html )
 
-создаём виртуальную среду python
-   mkdir c:\python_env\python3
-   virtualenv -p python3 python3
+   mkdir c:\python_env
+   cd c:\python_env
+   с:\python3\python3 -m venv c:\python_env\python3
 
 
 активируем среду    
-   source c:\python_env\python3\bin\activate
-
+   c:\python_env\python3\Scripts\activate.bat
 
    
 инсталируем нужные нам python-пакеты
@@ -39,22 +37,25 @@
 
 
 создаём папку для проектов
-   mkdir  projects/
+   mkdir projects
 
 
 запускаем сервер жупитер
-   cd projects/
+   cd projects
    jupyter notebook
+
+      [I 13:12:23.794 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.4.1
+      [I 13:12:23.797 NotebookApp] Обслуживание блокнотов из локального каталога: /projects/py
+      [I 13:12:23.797 NotebookApp] Jupyter Notebook 6.4.12 is running at:
+      [I 13:12:23.797 NotebookApp] http://localhost:8888/?token=...
 
 если браузер автоматически не открылся
 то копируем url и помещаем его в строку адреса браузера
 
 
-
 завершение работы среды 
     сохраняем/закрываем jupyter проекты
     гасим сервер jupyter
-    c:\python_env\python3\bin\deactivate
 
 
 
